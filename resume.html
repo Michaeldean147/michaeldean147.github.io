@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Milano | Interactive Responsive HTML5 Template</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Add your CSS files here -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/themes/green.css">
+
+	<!-- Add your Fonts here -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+
+	<div class="social">
+		<a href="http://facebook.com/rocketthemes" class="icon-facebook" title="Facebook"></a>
+		<a href="http://twitter.com/rocketthemes" class="icon-twitter" title="Twitter"></a>
+		<a href="https://github.com/Michaeldean147" class="icon-github" title="GitHub"></a>
+	</div>
+	<!-- Social Icons End -->
+
+	<header>
+		<nav id="nav">
+			<ul class="nav">
+				<li><img src="img/logo.svg" alt="My Logo"></li>
+				<li><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+				<li><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
+				<li class="active"><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
+				<li><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header End -->
+
+	<section class="content">
+		<article class="career">
+
+			<h2>My education</h2>
+			<ul class="ro-timeline">
+				<li>
+					<div class="ro-time"><span>2014 - 2015</span></div>
+					<div class="ro-icon icon-graduation"></div>
+					<div class="ro-label">
+						<h3>Full-Stack Software Development<span>gSchool</span></h3>
+						<p>Six month immersive software development program with curricular focus on full-stack development. Our studies included Ruby on Rails, Javascript, TDD, agile development, and pair programming princibles</p>
+					</div>
+				</li>
+				<li>
+					<div class="ro-time"><span>2008 - 2012</span></div>
+					<div class="ro-icon icon-graduation"></div>
+					<div class="ro-label">
+						<h3>Political Science B.A<span>The Ohio State University</span></h3>
+						<p>Curricular Focus On International Relations, Graduated Cum Laude</p>
+					</div>
+				</li>
+			</ul>
+
+
+			<h2>My career</h2>
+			<ul class="ro-timeline">
+				<li>
+					<div class="ro-time"><span>2010 - 2014</span></div>
+					<div class="ro-icon icon-briefcase"></div>
+					<div class="ro-label">
+						<h3>Connection Center Sales/Produce<span>Sam's Club</span></h3>
+						<p>Sold and activated cell phones as well as helped members with any questions they may have concerning their provider and/or plan. In the produce department I stocked produce and floral merchandise, and assisted customers with floral orders.</p>
+					</div>
+				</li>
+				<li>
+					<div class="ro-time"><span>2009-2010</span></div>
+					<div class="ro-icon icon-briefcase"></div>
+					<div class="ro-label">
+						<h3>Home Essentials Specialist<span>Best Buy</span></h3>
+						<p>Answered customer questions and sales from numerous departments including
+							housewares,
+							televisions,
+							movies/video games,
+							computers,
+							and MP3 Players</p>
+					</div>
+				</li>
+				<li>
+					<div class="ro-time"><span>2006 - 2009</span></div>
+					<div class="ro-icon icon-briefcase"></div>
+					<div class="ro-label">
+						<h3>Shift Manager<span>Hollywood Video</span></h3>
+						<p>Assisted customers with the rental and sale of both movies and video games.
+							My duties included
+							working to meet and exceed daily sales goals for movies and MVP memberships,
+							auditing Inventory,
+							assigning daily tasks,
+							and making daily morning bank deposits.</p>
+					</div>
+				</li>
+			</ul>
+
+		</article>
+		<!-- Timeline End -->
+
+		<aside class="sidebar">
+			<h2>My skills</h2>
+			<ul class="ratings">
+				<li>
+					<h4>Ruby on Rails</h4>
+				</li>
+				<li>
+					<h4>Javascript</h4>
+				</li>
+				<li>
+					<h4>Ember</h4>
+				</li>
+				<li>
+					<h4>Angular</h4>
+				</li>
+				<li>
+					<h4>Pair Programming</h4>
+				</li>
+				<li>
+					<h4>Test Driven Development</h4>
+				</li>
+			</ul>
+		</aside>
+		<!-- Sidebar End -->
+
+	</section>
+	<!-- Content End -->
+
+</div>
+<!-- Container End -->
+
+
+<!-- Scripts -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/plugins.js"></script>
+
+<script>
+      var navigation = responsiveNav("#nav", {
+        animate: true,        // Boolean: Use CSS3 transitions, true or false
+        transition: 400,      // Integer: Speed of the transition, in milliseconds
+        label: "",            // String: Label for the navigation toggle
+        insert: "before",     // String: Insert the toggle before or after the navigation
+        customToggle: "",     // Selector: Specify the ID of a custom toggle
+        openPos: "relative",  // String: Position of the opened nav, relative or static
+        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+        init: function(){},   // Function: Init callback
+        open: function(){},   // Function: Open callback
+        close: function(){}   // Function: Close callback
+      });
+</script>
+
+</body>
+</html>

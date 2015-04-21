@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Milano | Interactive Responsive HTML5 Template | Documentation</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Syntax Highlighter -->
+        <script src="syntax/scripts/shCore.js"></script>
+        <script src="syntax/scripts/shBrushXml.js"></script>
+        <script src="syntax/scripts/shBrushCss.js"></script>
+        <script src="syntax/scripts/shBrushJScript.js"></script>
+        <script src="syntax/scripts/shBrushPhp.js"></script>
+        <link rel="stylesheet" href="syntax/styles/shCoreDefault.css"/>
+        <script>SyntaxHighlighter.all();</script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Milano<br>Interactive Responsive HTML5 Template<br>Template Documentation</h1>
+            <div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#" data-scroll="header">Header &amp; Menu</a></li>
+                        <li><a href="#" data-scroll="profile">Profile Page</a></li>
+                        <li><a href="#" data-scroll="work">Portfolio Page</a></li>
+                        <li><a href="#" data-scroll="resume">Resume Page</a></li>
+                        <li><a href="#" data-scroll="contact">Contact Page</a></li>
+                        <li><a href="#" data-scroll="color">Color Theme</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="content">
+                <h2 style="background: #2cc2fa;">Thank you for your purchase, enjoy this Template!</h2>
+
+                <section id="header" data-anchor="header">
+                    <h2>Header &amp; Menu</h2>
+                    <div class="info">Further Information: 
+                        <a href="IconFontUsage/index.html" title="How to use your Icon-Font">How to use your Icon-Font (Scroll down to see the classes)</a>
+                    </div>
+                    <h3 class="subheading">How to customize the social icons</h3>
+                    <ol>
+                        <li>Open your file with the social icons</li>
+                        <li>Find the social div
+                            <pre class="brush: html">
+                                <div class="social">
+                                    <!-- Change the link to your social profile -->
+                                    <!-- Add a social icon class -->
+                                    <a href="http://facebook.com/rocketthemes" class="icon-facebook" title="Facebook"></a>
+                                    <a href="http://twitter.com/rocketthemes" class="icon-twitter" title="Twitter"></a>
+                                    <a href="#" class="icon-googleplus" title="Googleplus"></a>
+                                    <a href="#" class="icon-dribbble" title="Dribbble"></a>
+                                    <a href="#" class="icon-behance" title="Behance"></a>
+                                    <a href="#" class="icon-instagram" title="Instagram"></a>
+                                    <a href="#" class="icon-flickr" title="Flickr"></a>
+                                </div>
+                            </pre>
+                        </li>
+                        <li>Save your files after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">How to customize your navigation</h3>
+                    <ol>
+                        <li>Open the HTML file you want to change</li>
+                        <li>Find the header element with the navigation
+                            <pre class="brush: html">
+                                    <header>
+                                        <nav id="nav">
+                                            <ul class="nav">
+                                                <li><img src="img/logo.svg" alt="My Logo"></li>
+                                                <!-- The current page should have the .active class -->
+                                                <li class="active"><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+                                                <li><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
+                                                <li><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
+                                                <li><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </header>
+                            </pre>
+                        </li>
+                        <li>Change the span content or the icon class</li>
+                        <li>Save your file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">How to customize your logo</h3>
+                    <ol>
+                        <li>Open the HTML file you want to change</li>
+                        <li>Find the logo div (responsive view) and li (normal view)
+                            <pre class="brush: html">
+                                <div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+                            </pre>
+                            <pre class="brush: html">
+                                <li><img src="img/logo.svg" alt="My Logo"></li>
+                            </pre>
+                        </li>
+                        <li>Change your logo</li>
+                        <li>To adjust the padding of your logo look in the style.css file and find:
+                            <pre class="brush: css">
+                                .nav li:first-child img {
+                                    padding-top: 64px;
+                                }
+                            </pre>
+                            <pre class="brush: css">
+                                .logo {
+                                    display: block;
+                                    position: absolute;
+                                    top: -70px;
+                                    left: 0;
+                                    width: 100%;
+                                    text-align: center;
+                                    z-index: -1;
+                                }
+                            </pre>
+                        </li>
+                        <li>Save your files after changing</li>
+                    </ol>
+
+
+                </section>
+
+                <section id="profile" data-anchor="profile">
+                    <h2>Profile Page</h2>
+                    <h3 class="subheading">How to customize your profile image</h3>
+                    <ol>
+                        <li>Open the "img" folder in your theme directory</li>
+                        <li>Open "profile.jpg"</li>
+                        <li>Change the image and save it</li>
+                    </ol>
+                </section>
+
+                <section id="work" data-anchor="work">
+                    <h2>Portfolio &amp; Projects</h2>
+                    <h3 class="subheading">Customize the project section</h3>
+                    <ol>
+                        <li>Open work.html file</li>
+                        <li>Find the projects ul. Each project looks like this
+                            <pre class="brush: html">
+                                <li>
+                                    <figure>
+                                        <a href="project-1.html"><!-- Link to the project page -->
+                                            <img src="img/work/photography/1.jpg" alt="My Image"><!-- Image link -->
+                                            <div>
+                                                <span class="icon-folder"></span><!-- Hover icon link -->
+                                            </div>
+                                        </a>
+                                        <figcaption><!-- Description -->
+                                            <h4>Summer Shooting</h4>
+                                            <p>This is a project with an Image Slider. A perfect Showcase for Designers and Photographers.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </pre>
+                        </li>
+                        <li>Change your project data</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Customize the filterable gallery</h3>
+                    <div class="info">Further Information: 
+                        <a href="http://mixitup.io/#Documentation" title="Filter Plugin Documentation">Filter Plugin Documentation »</a>
+                    </div>
+                    <h4>Filter</h4>
+                    <ol>
+                        <li>Open work.html</li>
+                        <li>Find the gridfilter ul
+                            <pre class="brush: html">
+                                <!-- change data-filter and content to set your category -->
+                                <ul class="gridfilter">
+                                    <li class="filter" data-filter="all">Show All</li>
+                                    <li class="filter" data-filter="webdesign">Webdesign</li>
+                                    <li class="filter" data-filter="photography">Photography</li>
+                                    <li class="filter" data-filter="branding">Logo Branding</li>
+                                    <li class="filter" data-filter="uiux">UI / UX</li>
+                                </ul>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h4>Images</h4>
+                    <div class="info">Further Information: 
+                        <a href="http://brutaldesign.github.io/swipebox/" title="Lightbox Gallery Plugin Documentation">Lightbox Gallery Plugin Documentation »</a>
+                    </div>
+                    <ol>
+                        <li>Open work.html</li>
+                        <li>Find work-grid ul
+                            <pre class="brush: html">
+                                <li class="mix webdesign"><!-- Change filter class webdesign // DO NOT CHANGE CLASS "MIX" -->
+                                    <figure><!-- Thumbnail and Image -->
+                                        <a class="swipebox" href="img/work/photography/1.jpg" alt="Image" title="This is my description">
+                                            <img src="img/work/photography/1.jpg" alt="Image">
+                                            <figcaption>
+                                                <span class="icon-search"></span><!-- Hover icon -->
+                                            </figcaption>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Project Page Nav</h3>
+                    <ol>
+                        <li>Open project-1.html or another project file</li>
+                        <li>Find the project-nav div
+                            <pre class="brush: html">
+                                <div class="project-nav"><!-- Change the links to previous and next project -->
+                                    <a href="project-3.html" class="icon-arrow-left-5" title="Previous Project"></a>
+                                    <a href="work.html" class="icon-layout" title="All Projects"></a>
+                                    <a href="project-2.html" class="icon-arrow-right-5" title="Next Project"></a>
+                                </div>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Nivo Slider</h3>
+                    <div class="info">Further Information: 
+                        <a href="http://dev7studios.com/nivo-slider/#/documentation" title="Slider Plugin Documentation">Slider Plugin Documentation »</a>
+                    </div>                    
+                    <ol>
+                        <li>Open project-1.html or another project file</li>
+                        <li>Find the nivoSlider div
+                            <pre class="brush: html">
+                                <div class="slider-wrapper theme-default clearfix">
+                                    <div class="slider NivoSLider">
+                                        <!-- Change the image and thumbnail links. Set an image title to get a caption. -->
+                                        <img src="img/work/photography/1.jpg" data-thumb="img/work/photography/1.jpg" alt="" title="This is an image description." />
+                                        <img src="img/work/photography/2.jpg" data-thumb="img/work/photography/2.jpg" alt="" />
+                                        <img src="img/work/photography/3.jpg" data-thumb="img/work/photography/3.jpg" alt="" />
+                                        <img src="img/work/photography/4.jpg" data-thumb="img/work/photography/4.jpg" alt="" />
+                                        <img src="img/work/photography/5.jpg" data-thumb="img/work/photography/5.jpg" alt="" />
+                                        <img src="img/work/photography/6.jpg" data-thumb="img/work/photography/6.jpg" alt="" />
+                                        <img src="img/work/photography/7.jpg" data-thumb="img/work/photography/7.jpg" alt="" />
+                                        <img src="img/work/photography/8.jpg" data-thumb="img/work/photography/8.jpg" alt="" />
+                                        <img src="img/work/photography/9.jpg" data-thumb="img/work/photography/9.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </pre>
+                        </li>  
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">PrettyPhoto Lightbox</h3>
+                    <div class="info">Further Information: 
+                        <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/" title="Lightbox Gallery Plugin Documentation">Lightbox Gallery Plugin Documentation »</a>
+                    </div> 
+                    <ol>
+                        <li>Open project-3.html or another project file with a lightbox</li>
+                        <li>Find the ro-gallery ul
+                            <pre class="brush: html">
+                                <ul class="ro-gallery clearfix">
+                                    <!-- Set the image or video (href link) and your thumbnail (img src). The data-rel element has to be identical to create an image gallery, otherwise you will get a single image lightbox -->
+                                    <li><a href="img/work/design/1.jpg" data-rel="prettyPhoto[gallery2]" title="How is the description on that one? How is the description on that one? How is the description on that one? "><img src="img/work/design/1.jpg" alt="This is a pretty long title" /></a></li>
+                                    <li><a href="img/work/design/2.jpg" data-rel="prettyPhoto[gallery2]" title="Description on a single line."><img src="img/work/design/2.jpg" alt="" /></a></li>
+                                    <li><a href="http://youtu.be/kh29_SERH0Y?rel=0" data-rel="prettyPhoto[gallery2]" title="YouTube demo"><img src="img/work/design/3.jpg" alt="" /></a></li>
+                                    <li><a href="img/work/design/4.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/4.jpg" alt="" /></a></li>
+                                    <li><a href="img/work/design/5.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/5.jpg" alt="" /></a></li>
+                                    <li><a href="img/work/design/6.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/6.jpg" alt="" /></a></li>
+                                    <li><a href="http://vimeo.com/7874398&width=700" data-rel="prettyPhoto[gallery2]" title="Vimeo video"><img src="img/work/design/7.jpg" alt="This is my Video description!"/></a></li>
+                                </ul>
+                            </pre>
+                        </li>  
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="resume" data-anchor="resume">
+                    <h2>Resume Page</h2>
+                    <h3 class="subheading">Customize the timeline</h3>
+                    <ol>
+                        <li>Open resume.html</li>
+                        <li>Find the ro-timeline ul
+                            <pre class="brush: html">
+                                <!-- A timeline element looks like this -->
+                                <li>
+                                    <time class="ro-time"><span>2012 - 2013</span></time><!-- Change the Year -->
+                                    <div class="ro-icon icon-briefcase"></div><!-- Change the Icon -->
+                                    <div class="ro-label"><!-- Change the Title, Company and text -->
+                                        <h3>Frontend Developer<span>Example Inc.</span></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, maiores sint possimus distinctio tenetur in magni animi pariatur sed. Consequatur, earum, sunt a tenetur.</p>
+                                    </div>
+                                </li>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Customize your skills</h3>
+                    <h4>Dots Version</h4>
+                    <ol>
+                        <li>Open resume.html</li>
+                        <li>Find the sidebar
+                            <pre class="brush: html">
+                                <h3 class="test"><span class="icon-text-2"></span>Programming</h3><!-- Change the skills section title -->
+                                <ul class="ratings">
+                                    <li>
+                                        <h5>HTML</h5><!-- Change the single skill title -->
+                                        <div class="rating" data-rating="7"><!-- Change your skill rating e.g. data-rating="5" (min. 0 / max. 8) -->
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </li>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h4>Skillbar Version</h4>
+                    <ol>
+                        <li>Open resume.html</li>
+                        <li>Find the sidebar
+                            <pre class="brush: html">
+                                    <h3 class="test"><span class="icon-brush"></span>Graphic Design</h3><!-- Change the skills section title -->
+                                    <ul class="skills">
+                                        <li><span data-skill="90">Photoshop</span></li><!-- Change your skill title and data-skill (min. 0 / max. 100) -->
+                                        <li><span data-skill="80">Illustrator</span></li>
+                                        <li><span data-skill="85">InDesign</span></li>
+                                        <li><span data-skill="90">Firework</span></li>
+                                        <li><span data-skill="85">After Effects</span></li>
+                                        <li><span data-skill="100">Cinema 4D</span></li>
+                                    </ul>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="contact" data-anchor="contact">
+                    <h2>Contact Page &amp; Form</h2>
+                    <h3 class="subheading">Change Google Map</h3>
+                    <div class="info">Further Information: 
+                        <a href="https://developers.google.com/maps/documentation/javascript/examples/" title="Google Maps Code Examples and Documentation">Google Maps Code Examples and Documentation »</a>
+                    </div>                      
+                    <ol>
+                        <li>Open contact.html</li>
+                        <li>Find the maps javascript
+                            <pre class="brush: js">
+                                <script>
+                                    function initialize() {
+                                      // Change the LatLng Values to get your position
+                                      var myLatlng = new google.maps.LatLng(-37.817532,144.967148);
+                                      var mapOptions = {
+                                        zoom: 14,
+                                        center: myLatlng,
+                                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                                      }
+                                      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+                                      var marker = new google.maps.Marker({
+                                          position: myLatlng,
+                                          map: map,
+                                          title: 'Visit us here!'
+                                      });
+                                    }
+
+                                    google.maps.event.addDomListener(window, 'load', initialize);
+
+                                </script>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Change the form</h3>                    
+                    <ol>
+                        <li>Open contact.html</li>
+                        <li>Find the form
+                            <pre class="brush: html">
+                                <form action="send.php" name="contactform" class="contactform" method="post">
+                                    <!-- Change your form data, e.g. Name, Company, Email -->
+                                    <!-- Change the placeholder element for another preview text -->
+                                    <label for="name">Full name<span class="required">*</span></label>
+                                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                                    <label for="company">Company<span class="required">*</span></label>
+                                    <input type="text" name="company" id="company" placeholder="Where do you work?" required> 
+
+                                    <label for="email">Email address<span class="required">*</span></label>
+                                    <input type="email" name="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="e.g. info@envato.com" required>
+
+                                    <!-- To set the budget ranges change the content and value of each radio button -->
+                                    <div class="budgetrange">
+                                        <label for="budget">Budget range<span class="required">*</span></label><br>
+                                        <input type="radio" name="budget" id="budget1" value="$1.000 - €2.000" checked>
+                                        <label for="budget1" class="radio">$1.000 - 2.000</label>
+                                        <input type="radio" name="budget" id="budget2" value="$2.001 - €5.000">
+                                        <label for="budget2" class="radio">$2.001 - 5.000</label>
+                                        <input type="radio" name="budget" id="budget3" value="$5.001 - 10,000+">
+                                        <label for="budget3" class="radio">$5.001 - 10,000+</label>
+                                    </div>
+
+                                    <label for="project">Project description<span class="required">*</span></label><br>
+                                    <textarea name="project" id="project" cols="40" rows="3" placeholder="Describe your project and add some details." required></textarea>
+                                    <input type="submit" name="submit" id="submit" value="Send">
+                                </form>
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Change the form settings</h3>                    
+                    <ol>
+                        <li>Open send.php</li>
+                        <li>Change the Email address
+                            <pre class="brush: php">
+                                $address = "spam@rocketthemes.net"; // Your email address here
+                            </pre>
+                        </li>
+                        <li>Change the success message
+                            <pre class="brush: php">
+                                echo "<div class='success-msg'>
+                                    <span class='icon-info-2'></span> // Info Icon
+                                    Hello, $name.<br> // $name will display the name field data of the form
+                                    Your message has been sent successfully.<br>
+                                    We will contact you soon!
+                                </div>";
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="color" data-anchor="color">
+                    <h2>Choose your color theme or create a new one</h2>
+                    <h3 class="subheading">Set your color theme</h3>
+                    <h4>The Milano Template comes with 7 predefined color themes</h4>
+                    <ol>
+                        <li>Open your file</li>
+                        <li>Find the head CSS area
+                            <pre class="brush: html">
+                                <!-- Add your CSS files here -->
+                                <!-- Set your color theme at the bottom of all CSS files -->
+                                <link rel="stylesheet" href="css/themes/green.css"><!-- Set the color e.g. css/themes/red.css -->
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Create a new color theme</h3>
+                    <h4>Just copy a predefined color theme and rename it to create your own theme</h4>
+                    <ol>
+                        <li>Open your file</li>
+                        <li>Find the head CSS area
+                            <pre class="brush: html">
+                                <!-- Add your CSS files here -->
+                                <link rel="stylesheet" href="css/themes/green.css"><!-- Set your theme name e.g. css/themes/purple.css -->
+                            </pre>
+                        </li>
+                        <li>Save the file after changing</li>
+                    </ol>
+                </section>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                &copy 2013 | Milano | Interactive Responsive HTML5 Template by 
+                <a href="http://www.rocketthemes.net" title="rocketthemes">rocketthemes</a>
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+
+        // Options
+        var scrollSpeed = 750;      // Speed of scrolling in ms
+        var topOffset = 30;         // Offset in px
+
+        // Scroll Buttons
+        var scrollButtons = $('.nav a, .galleryscroll');  // Scroll Buttons (ID or Class)
+
+        // Functions
+        $(scrollButtons).on('click', function() {
+
+            var scrollAnchor = $(this).attr('data-scroll'),
+                scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - topOffset;
+
+            $('body, html').animate({
+                scrollTop: scrollPoint
+            }, scrollSpeed);
+
+            return false;
+
+        });
+
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+
+            if (windscroll >= 0 ) {
+                $('section').each(function(i) {
+                    if ($(this).position().top - 1 <= windscroll + 30) {
+                        $('.nav a.active').removeClass('active');
+                        $('.nav a').eq(i).addClass('active');
+                    }
+                });
+
+            } else {
+                $('.nav a.active').removeClass('active');
+                $('.nav a:first').addClass('active');
+            }
+
+        }).scroll();
+
+        </script>
+
+    </body>
+</html>

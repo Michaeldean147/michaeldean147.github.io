@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Milano | Interactive Responsive HTML5 Template</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Add your CSS files here -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/themes/green.css">
+
+	<!-- Add your fonts here -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Add your scripts here -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script>
+		function initialize() {
+		  var myLatlng = new google.maps.LatLng(37.787588,-122.390472);
+		  var mapOptions = {
+		    zoom: 14,
+		    center: myLatlng,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  }
+		  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Visit us here!'
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+
+	<div class="social">
+		<a href="http://facebook.com/rocketthemes" class="icon-facebook" title="Facebook"></a>
+		<a href="http://twitter.com/rocketthemes" class="icon-twitter" title="Twitter"></a>
+		<a href="https://github.com/Michaeldean147" class="icon-github" title="GitHub"></a>
+	</div>
+	<!-- Social Icons End -->
+
+	<header>
+		<nav id="nav">
+			<ul class="nav">
+				<li><img src="img/logo.svg" alt="My Logo"></li>
+				<li><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+				<li><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
+				<li><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
+				<li class="active"><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header End -->
+
+	<section class="content">
+
+		<div id="map"></div>
+
+		<aside class="sidebar">
+			<div class="c-data">
+				<h2>Contact</h2>
+				<p>
+					<strong>Michael Dean</strong><br>
+					201 Harrison St, Baycrest Towers, Apt 707<br>
+					94105 San Francisco<br>
+					California
+				</p>
+				<p>
+					<strong>E-Mail Contact:</strong>
+					<a class="c-email" href="mailto:michaeldean147@yahoo.com">michaeldean147@yahoo.com</a>
+				</p>
+
+			</div>
+		</aside>
+		<!-- Sidebar End -->
+
+	</section>
+	<!-- Content Section End -->
+
+</div>
+<!-- Container End -->
+
+<!-- Add your scripts here -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/plugins.js"></script>
+
+<script>
+      var navigation = responsiveNav("#nav", {
+        animate: true,        // Boolean: Use CSS3 transitions, true or false
+        transition: 400,      // Integer: Speed of the transition, in milliseconds
+        label: "",            // String: Label for the navigation toggle
+        insert: "before",     // String: Insert the toggle before or after the navigation
+        customToggle: "",     // Selector: Specify the ID of a custom toggle
+        openPos: "relative",  // String: Position of the opened nav, relative or static
+        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+        init: function(){},   // Function: Init callback
+        open: function(){},   // Function: Open callback
+        close: function(){}   // Function: Close callback
+      });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Milano | Interactive Responsive HTML5 Template</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Add your CSS files here -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nivo/default.css">
+	<link rel="stylesheet" href="css/themes/green.css">
+
+	<!-- Add your Fonts here -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+
+	<div class="social">
+		<a href="http://facebook.com/rocketthemes" class="icon-facebook" title="Facebook"></a>
+		<a href="http://twitter.com/rocketthemes" class="icon-twitter" title="Twitter"></a>
+		<a href="https://github.com/Michaeldean147" class="icon-github" title="GitHub"></a>
+	</div>
+	<!-- Social Icons End -->
+
+	<header>
+		<nav id="nav">
+			<ul class="nav">
+				<li><img src="img/logo.svg" alt="My Logo"></li>
+				<li><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+				<li class="active"><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
+				<li><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
+				<li><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header End -->
+
+	<section class="content">
+		<article class="s-project">
+			<h2>ChowSpana</h2>
+			<div class="project-nav">
+				<a href="project-3.html" class="icon-arrow-left-5" title="Previous Project"></a>
+				<a href="work.html" class="icon-layout" title="All Projects"></a>
+				<a href="project-2.html" class="icon-arrow-right-5" title="Next Project"></a>
+			</div>
+
+			<div class="details">
+
+				<div>
+					<h4>Project Description</h4>
+					<p>My personal "capstone" project for gSchool. Ruby on Rails app that utilizes Javascript and jQuery. An app for 'foodies' who are always on the hunt for odd or rare food items. Users sign-up/sign-in and are then able to post their interesting food finds. This includes the name, price, location, address, along with a description and photo of the item. Other users can then view their posts and favorite the ones they like. The site uses Javascript and jQuery to handle the sorting of favorites and to allow users to view a static map image of the items location.</p>
+				</div>
+
+				<ul>
+					<li>
+						<h4>Links</h4>
+						<p><a href="http://chowspana.mybluemix.net/" target="blank"> App on Bluemix</a></p>
+						<p><a href="https://pacific-caverns-6821.herokuapp.com/" target="blank"> App on Heroku</a></p>
+						<p><a href="https://github.com/Michaeldean147/ChowSpana" target="blank">Github Repo</a></p>
+					</li>
+					<li>
+						<h4>Year</h4>
+						<p>2015</p>
+					</li>
+					<li>
+						<h4>Project Stack</h4>
+						<p>Ruby on Rails, JQuery, S3, Mapbox, Google Maps</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="slider-wrapper theme-default clearfix">
+	            <div class="slider NivoSLider">
+	                <img src="img/work/chowspana_pic.png" data-thumb="img/work/chowspana_pic.png" alt="" />
+	            		<img src="img/work/chowspana_pic_find.png" data-thumb="img/work/chowspana_pic_find.png" alt="" />
+	                <img src="img/work/chowspana_pic_map.png" data-thumb="img/work/chowspana_pic_map.png" alt="" />
+	            </div>
+	        </div>
+			<!-- Slider End -->
+
+		</article>
+
+	</section>
+	<!-- Content End -->
+
+</div>
+<!-- Container End -->
+
+<!-- Add your scripts here -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+<script>
+	var navigation = responsiveNav("#nav", {
+		animate: true,        // Boolean: Use CSS3 transitions, true or false
+		transition: 400,      // Integer: Speed of the transition, in milliseconds
+		label: "",            // String: Label for the navigation toggle
+		insert: "before",     // String: Insert the toggle before or after the navigation
+		customToggle: "",     // Selector: Specify the ID of a custom toggle
+		openPos: "relative",  // String: Position of the opened nav, relative or static
+		jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+		init: function(){},   // Function: Init callback
+		open: function(){},   // Function: Open callback
+		close: function(){}   // Function: Close callback
+	});
+
+	// Mixitup Filter Gallery
+    $(function(){
+        $('.work-grid').mixitup();
+    });
+
+	// Swipebox Gallery
+	$(function($) {
+		$(".swipebox").swipebox();
+	});
+
+	// Nivo Slider
+    $(window).load(function() {
+        $('.slider').nivoSlider({
+	        effect: 'boxRandom',
+	        slices: 15,
+	        boxCols: 8,
+	        boxRows: 4,
+	        animSpeed: 500,
+	        pauseTime: 3000,
+	        controlNav: true
+        });
+    });
+</script>
+
+</body>
+</html>
